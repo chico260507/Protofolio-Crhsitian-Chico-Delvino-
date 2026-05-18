@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Return of Capital (ROC) - Financial Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">📊</span>
+                <span class="logo-text">ROC Education</span>
+            </div>
+            <div class="nav-right">
+                <button class="language-toggle" id="langToggle">
+                    <span class="lang-flag">🇺🇸</span>
+                    <span class="lang-text" id="langText">English</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="floating-element float-1"></div>
+            <div class="floating-element float-2"></div>
+            <div class="floating-element float-3"></div>
+            <div class="gradient-blur"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" id="heroTitle">Understanding Return of Capital (ROC)</h1>
+                <p class="hero-subtitle" id="heroSubtitle">Learn the benefits, risks, and hidden impact of ROC for investors.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="learnBtn">
+                        <span id="learnBtnText">Learn More</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="chart-container">
+                    <svg class="animated-chart" viewBox="0 0 200 150">
+                        <path class="chart-line" d="M 10 120 Q 50 80, 90 90 T 190 30" fill="none" stroke="url(#gradient)" stroke-width="3"/>
+                        <circle class="chart-dot" cx="10" cy="120" r="4" fill="#38BDF8"/>
+                        <circle class="chart-dot" cx="90" cy="90" r="4" fill="#7DD3FC"/>
+                        <circle class="chart-dot" cx="190" cy="30" r="4" fill="#0F9AE0"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#7DD3FC;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#38BDF8;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is ROC Section -->
+    <section class="section what-is-roc" id="whatIsROC">
+        <div class="container">
+            <h2 class="section-title" id="whatTitle">What is Return of Capital?</h2>
+            <p class="section-subtitle" id="whatSubtitle">Understand the fundamentals of ROC</p>
+            
+            <div class="infographic-grid">
+                <!-- Card 1: What is ROC -->
+                <div class="infographic-card card-1">
+                    <div class="card-icon">💰</div>
+                    <h3 class="card-title" id="rocDefTitle">What is ROC</h3>
+                    <p class="card-description" id="rocDefDesc">
+                        Return of Capital is a distribution to shareholders that represents a return of their invested capital, not earnings from the company.
+                    </p>
+                    <div class="card-highlight" id="rocDefHighlight">
+                        Unlike dividends, ROC reduces your cost basis
+                    </div>
+                </div>
+
+                <!-- Card 2: How ROC Works -->
+                <div class="infographic-card card-2">
+                    <div class="card-icon">⚙️</div>
+                    <h3 class="card-title" id="rocHowTitle">How ROC Works</h3>
+                    <p class="card-description" id="rocHowDesc">
+                        When a company distributes capital, it lowers your cost basis. This defers taxes but increases your capital gains liability when you sell.
+                    </p>
+                    <div class="card-highlight" id="rocHowHighlight">
+                        Reduces cost basis = Higher future capital gains
+                    </div>
+                </div>
+
+                <!-- Card 3: ROC vs Dividend -->
+                <div class="infographic-card card-3">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title" id="rocVsTitle">ROC vs Dividend</h3>
+                    <p class="card-description" id="rocVsDesc">
+                        Dividends are company earnings; ROC is your own money returned. Dividends are taxed immediately; ROC taxes are deferred.
+                    </p>
+                    <div class="card-highlight" id="rocVsHighlight">
+                        Different tax treatment = Different investment strategy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Q&A Section -->
+    <section class="section qa-section" id="qaSection">
+        <div class="container">
+            <h2 class="section-title" id="qaTitle">Frequently Asked Questions</h2>
+            <p class="section-subtitle" id="qaSubtitle">Everything you need to know about ROC</p>
+            
+            <div class="accordion-container">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-icon">⚠️</div>
+                        <div class="accordion-title-container">
+                            <h3 class="accordion-title" id="q1Title">The real danger of ROC without net income</h3>
+                        </div>
+                        <div class="accordion-toggle">
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p id="q1Content">
+                            When a company returns capital without generating profits, it may be depleting its asset base. This can signal financial distress and is particularly concerning if debt is rising simultaneously.
+                        </p>
+                        <div class="warning-box">
+                            <strong id="warningLabel">Red Flag:</strong> <span id="q1Warning">Sustained ROC with negative earnings often precedes dividend cuts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-icon">🎯</div>
+                        <div class="accordion-title-container">
+                            <h3 class="accordion-title" id="q2Title">Why professional investors prefer ROC</h3>
+                        </div>
+                        <div class="accordion-toggle">
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p id="q2Content">
+                            Professional investors often prefer ROC over dividends because it allows tax deferral. They control when to trigger the capital gain by choosing when to sell the position, creating tax efficiency.
+                        </p>
+                        <ul class="content-list" id="q2List">
+                            <li>Deferred tax liability</li>
+                            <li>Control over tax timing</li>
+                            <li>Higher total returns if held long-term</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-icon">📈</div>
+                        <div class="accordion-title-container">
+                            <h3 class="accordion-title" id="q3Title">Long-term vs short-term investor impact</h3>
+                        </div>
+                        <div class="accordion-toggle">
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p id="q3Content">
+                            Long-term investors benefit from tax deferral on ROC, compounding gains over decades. Short-term traders face the same capital gains tax as dividends, making ROC less advantageous.
+                        </p>
+                        <div class="comparison-box">
+                            <div class="comparison-item">
+                                <strong id="longTermLabel">Long-term (10+ years)</strong>
+                                <p id="longTermDesc">ROC creates significant tax advantage</p>
+                            </div>
+                            <div class="comparison-item">
+                                <strong id="shortTermLabel">Short-term (< 1 year)</strong>
+                                <p id="shortTermDesc">ROC offers minimal advantage over dividends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-icon">🚨</div>
+                        <div class="accordion-title-container">
+                            <h3 class="accordion-title" id="q4Title">How to identify toxic ROC</h3>
+                        </div>
+                        <div class="accordion-toggle">
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p id="q4Content">
+                            Watch for declining NAV, rising debt, and unsustainable payout ratios. These are warning signs that the company cannot maintain its distribution through earnings alone.
+                        </p>
+                        <ul class="warning-list" id="q4Warnings">
+                            <li>NAV declining quarter-over-quarter</li>
+                            <li>Debt rising while assets shrink</li>
+                            <li>Payout ratio exceeding 100% of earnings</li>
+                            <li>Management not addressing sustainability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-icon">💼</div>
+                        <div class="accordion-title-container">
+                            <h3 class="accordion-title" id="q5Title">ROC vs selling shares</h3>
+                        </div>
+                        <div class="accordion-toggle">
+                            <span class="toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <p id="q5Content">
+                            ROC is essentially a forced sale of your position without you choosing the tax timing. Selling shares gives you control over tax realization and allows you to rebalance strategically.
+                        </p>
+                        <div class="comparison-table">
+                            <div class="table-row">
+                                <div class="table-cell"><strong id="rocLabel">ROC</strong></div>
+                                <div class="table-cell">Company controls timing</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell"><strong id="sellingLabel">Selling</strong></div>
+                                <div class="table-cell">You control timing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Comparison Section -->
+    <section class="section comparison-section" id="comparisonSection">
+        <div class="container">
+            <h2 class="section-title" id="compTitle">ROC vs Dividend Comparison</h2>
+            <p class="section-subtitle" id="compSubtitle">See how they differ across key factors</p>
+            
+            <div class="comparison-dashboard">
+                <!-- Tax Efficiency -->
+                <div class="comparison-item-large">
+                    <div class="comparison-label">
+                        <h4 id="taxLabel">Tax Efficiency</h4>
+                        <span class="comparison-icon">💰</span>
+                    </div>
+                    <div class="comparison-bars">
+                        <div class="bar-item">
+                            <div class="bar-label" id="rocTaxLabel">ROC</div>
+                            <div class="bar-container">
+                                <div class="bar-fill roc-bar" style="width: 85%"></div>
+                            </div>
+                            <div class="bar-value">High</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label" id="divTaxLabel">Dividend</div>
+                            <div class="bar-container">
+                                <div class="bar-fill dividend-bar" style="width: 35%"></div>
+                            </div>
+                            <div class="bar-value">Low</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ownership Impact -->
+                <div class="comparison-item-large">
+                    <div class="comparison-label">
+                        <h4 id="ownershipLabel">Ownership Impact</h4>
+                        <span class="comparison-icon">👥</span>
+                    </div>
+                    <div class="comparison-bars">
+                        <div class="bar-item">
+                            <div class="bar-label" id="rocOwnLabel">ROC</div>
+                            <div class="bar-container">
+                                <div class="bar-fill roc-bar" style="width: 70%"></div>
+                            </div>
+                            <div class="bar-value" id="rocOwnValue">Reduces</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label" id="divOwnLabel">Dividend</div>
+                            <div class="bar-container">
+                                <div class="bar-fill dividend-bar" style="width: 20%"></div>
+                            </div>
+                            <div class="bar-value" id="divOwnValue">No change</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cash Flow -->
+                <div class="comparison-item-large">
+                    <div class="comparison-label">
+                        <h4 id="cashflowLabel">Cash Flow Reality</h4>
+                        <span class="comparison-icon">💵</span>
+                    </div>
+                    <div class="comparison-bars">
+                        <div class="bar-item">
+                            <div class="bar-label" id="rocCashLabel">ROC</div>
+                            <div class="bar-container">
+                                <div class="bar-fill roc-bar" style="width: 60%"></div>
+                            </div>
+                            <div class="bar-value" id="rocCashValue">Your money</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label" id="divCashLabel">Dividend</div>
+                            <div class="bar-container">
+                                <div class="bar-fill dividend-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="bar-value" id="divCashValue">Earnings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long-term Impact -->
+                <div class="comparison-item-large">
+                    <div class="comparison-label">
+                        <h4 id="longtermLabel">Long-term Impact</h4>
+                        <span class="comparison-icon">📊</span>
+                    </div>
+                    <div class="comparison-bars">
+                        <div class="bar-item">
+                            <div class="bar-label" id="rocLongLabel">ROC</div>
+                            <div class="bar-container">
+                                <div class="bar-fill roc-bar" style="width: 75%"></div>
+                            </div>
+                            <div class="bar-value" id="rocLongValue">High gains risk</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label" id="divLongLabel">Dividend</div>
+                            <div class="bar-container">
+                                <div class="bar-fill dividend-bar" style="width: 45%"></div>
+                            </div>
+                            <div class="bar-value" id="divLongValue">Steady income</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toxic ROC Warning Section -->
+    <section class="section warning-section" id="warningSection">
+        <div class="container">
+            <h2 class="section-title" id="toxicTitle">⚠️ Toxic ROC Warning</h2>
+            <p class="section-subtitle" id="toxicSubtitle">Know the red flags</p>
+            
+            <div class="warning-card-main">
+                <div class="warning-header">
+                    <div class="warning-icon-large">🚨</div>
+                    <h3 id="warningMainTitle">Signs of Toxic ROC</h3>
+                </div>
+                
+                <div class="warning-signs">
+                    <div class="warning-sign">
+                        <div class="sign-icon">📉</div>
+                        <h4 id="sign1Title">Shrinking NAV</h4>
+                        <p id="sign1Desc">Net Asset Value declining quarter after quarter while ROC continues</p>
+                    </div>
+                    
+                    <div class="warning-sign">
+                        <div class="sign-icon">📈</div>
+                        <h4 id="sign2Title">Rising Debt</h4>
+                        <p id="sign2Desc">Debt increasing while the company pays out capital to shareholders</p>
+                    </div>
+                    
+                    <div class="warning-sign">
+                        <div class="sign-icon">💸</div>
+                        <h4 id="sign3Title">Unsustainable Payouts</h4>
+                        <p id="sign3Desc">Payout ratios exceeding 100% of available cash flow</p>
+                    </div>
+                    
+                    <div class="warning-sign">
+                        <div class="sign-icon">🤐</div>
+                        <h4 id="sign4Title">Lack of Transparency</h4>
+                        <p id="sign4Desc">Management avoiding questions about ROC sustainability</p>
+                    </div>
+                </div>
+
+                <div class="warning-action">
+                    <strong id="actionTitle">What to do:</strong>
+                    <p id="actionDesc">Always check the fund's financial statements before investing in companies or funds with ROC policies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Types Section -->
+    <section class="section investor-section" id="investorSection">
+        <div class="container">
+            <h2 class="section-title" id="investorTitle">ROC Impact by Investor Type</h2>
+            <p class="section-subtitle" id="investorSubtitle">How different investors are affected</p>
+            
+            <div class="investor-grid">
+                <!-- Short-term Trader -->
+                <div class="investor-card trader-card">
+                    <div class="investor-icon">⚡</div>
+                    <h3 id="traderTitle">Short-term Trader</h3>
+                    
+                    <div class="investor-detail">
+                        <h4 id="traderTimelineLabel">Timeline</h4>
+                        <p id="traderTimeline">Hold 3-12 months</p>
+                    </div>
+                    
+                    <div class="investor-detail">
+                        <h4 id="traderImpactLabel">ROC Impact</h4>
+                        <p id="traderImpact">Minimal advantage over dividends</p>
+                    </div>
+                    
+                    <div class="investor-detail">
+                        <h4 id="traderTaxLabel">Tax Impact</h4>
+                        <p id="traderTax">Short-term capital gains tax applies</p>
+                    </div>
+                    
+                    <div class="investor-stat">
+                        <div class="stat-value" id="traderAdvantage">15-20%</div>
+                        <div class="stat-label" id="traderAdvLabel">Advantage vs Dividend</div>
+                    </div>
+
+                    <div class="investor-breakdown">
+                        <div class="breakdown-section">
+                            <h5 id="traderPosTitle">✓ Positive Impact:</h5>
+                            <ul id="traderPosList" class="benefit-list"></ul>
+                        </div>
+                        <div class="breakdown-section">
+                            <h5 id="traderNegTitle">✗ Negative Impact:</h5>
+                            <ul id="traderNegList" class="warning-list"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium-term Investor -->
+                <div class="investor-card investor-card-medium">
+                    <div class="investor-icon">📈</div>
+                    <h3 id="mediumTitle">Medium-term Investor</h3>
+                    
+                    <div class="investor-detail">
+                        <h4 id="mediumTimelineLabel">Timeline</h4>
+                        <p id="mediumTimeline">Hold 3-7 years</p>
+                    </div>
+                    
+                    <div class="investor-detail">
+                        <h4 id="mediumImpactLabel">ROC Impact</h4>
+                        <p id="mediumImpact">Moderate tax efficiency gains</p>
+                    </div>
+                    
+                    <div class="investor-detail">
+                        <h4 id="mediumTaxLabel">Tax Impact</h4>
+                        <p id="mediumTax">Mixed - some deferral advantage</p>
+                    </div>
+                    
+                    <div class="investor-stat">
+                        <div class="stat-value" id="mediumAdvantage">25-35%</div>
+                        <div class="stat-label" id="mediumAdvLabel">Advantage vs Dividend</div>
+                    </div>
+
+                    <div class="investor-breakdown">
+                        <div class="breakdown-section">
+                            <h5 id="mediumPosTitle">✓ Positive Impact:</h5>
+                            <ul id="mediumPosList" class="benefit-list">
+                                <li id="mediumPos1">Provides additional cash flow</li>
+                                <li id="mediumPos2">Taxes not directly paid</li>
+                                <li id="mediumPos3">Money can be reinvested</li>
+                                <li id="mediumPos4">Helps compound growth</li>
+                            </ul>
+                        </div>
+                        <div class="breakdown-section">
+                            <h5 id="mediumNegTitle">✗ Negative Impact:</h5>
+                            <ul id="mediumNegList" class="warning-list">
+                                <li id="mediumNeg1">Cost basis continues to decrease</li>
+                                <li id="mediumNeg2">Higher capital gains tax risk when selling</li>
+                                <li id="mediumNeg3">Can make unhealthy company appear healthy</li>
+                                <li id="mediumNeg4">Potential company value reduction if ROC excessive</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long-term Investor -->
+                <div class="investor-card investor-card-featured">
+                    <div class="investor-icon">🏆</div>
+                    <h3 id="investorLongTitle">Long-term Investor</h3>
+                    
+                    <div class="investor-detail">
+                        <h4 id="investorTimelineLabel">Timeline</h4>
+                        <p id="investorTimeline">Hold 10+ years</p>
+                    </div>
+                    
+                    <div class="investor-detail">
+                        <h4 id="investorImpactLabel">ROC Impact</h4>
+                        <p id="investorImpact">Significant tax efficiency gains</p>
+                    </div>
+                    
+                    <div class="investor-detail">
+                        <h4 id="investorTaxLabel">Tax Impact</h4>
+                        <p id="investorTax">Long-term capital gains + deferral</p>
+                    </div>
+                    
+                    <div class="investor-stat featured">
+                        <div class="stat-value" id="investorAdvantage">35-50%</div>
+                        <div class="stat-label" id="investorAdvLabel">Advantage vs Dividend</div>
+                    </div>
+
+                    <div class="investor-breakdown">
+                        <div class="breakdown-section">
+                            <h5 id="investorLongPosTitle">✓ Positive Impact:</h5>
+                            <ul id="investorLongPosList" class="benefit-list"></ul>
+                        </div>
+                        <div class="breakdown-section">
+                            <h5 id="investorLongNegTitle">✗ Negative Impact:</h5>
+                            <ul id="investorLongNegList" class="warning-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="section conclusion-section" id="conclusionSection">
+        <div class="container">
+            <div class="conclusion-card conclusion-card-glow">
+                <div class="conclusion-top">
+                    <div>
+                        <div class="conclusion-icon">📈</div>
+                        <h2 id="conclusionTitle">Conclusion</h2>
+                        <p class="conclusion-main" id="conclusionMain">
+                            Return of Capital (ROC) affects each type of investor differently. Short-term traders usually experience minimal impact, while medium- and long-term investors benefit more from tax deferral and compounding. However, the longer an investment is held, the greater the risk of cost basis reduction and future capital gains taxes. Therefore, ROC can be both beneficial and risky depending on the company’s condition and the investor’s strategy.
+                        </p>
+                    </div>
+                    <div class="conclusion-chart">
+                        <div class="chart-wave"></div>
+                        <div class="chart-point point-1"></div>
+                        <div class="chart-point point-2"></div>
+                        <div class="chart-point point-3"></div>
+                    </div>
+                </div>
+
+                <div class="animated-divider"></div>
+
+                <div class="conclusion-highlights">
+                    <div class="highlight-item">
+                        <strong>Tax Deferral</strong>
+                        <span id="highlight1Text">ROC can delay tax liabilities for longer-term holders.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <strong>Compounding</strong>
+                        <span id="highlight2Text">Reinvested ROC helps amplify growth over time.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <strong>Capital Gains</strong>
+                        <span id="highlight3Text">Lower cost basis may create a larger capital gains bill later.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <strong>Risk</strong>
+                        <span id="highlight4Text">Excessive ROC can signal toxic payout behavior.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 id="footerAbout">About ROC Education</h4>
+                    <p id="footerDesc">A modern financial education platform dedicated to making complex investment concepts accessible to everyone.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn">🔗 LinkedIn</a>
+                        <a href="https://github.com" target="_blank" title="GitHub">💻 GitHub</a>
+                        <a href="mailto:contact@roc.edu" title="Email">📧 Email</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="footerMore">Learn More</h4>
+                    <ul id="footerLinks">
+                        <li><a href="#whatIsROC">What is ROC</a></li>
+                        <li><a href="#qaSection">FAQ</a></li>
+                        <li><a href="#comparisonSection">Comparison</a></li>
+                        <li><a href="#warningSection">Warnings</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p id="footerCredit">Created by <strong>Christian Chico</strong> - GoTrade Internship Project</p>
+                <p id="footerYear">© 2026 ROC Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
